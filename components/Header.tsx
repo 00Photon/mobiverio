@@ -37,23 +37,23 @@ export default function Header() {
         { href: "/products", label: "View All Products", description: "Complete product portfolio" },
       ],
     },
-    { href: "#work", label: "Our Work" },
-    { href: "#about", label: "About Us" },
+    // { href: "#work", label: "Our Work" },
+    { href: "/company", label: "Company" },
     { href: "/blog", label: "Insights" },
-    { href: "#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ]
 
   return (
     <header
       className={`px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "backdrop-blur-md bg-white/90 border-b border-gray-200 shadow-sm"
-          : "backdrop-blur-sm bg-transparent border-b border-white/10"
+          ? "backdrop-blur-md bg-white/90  shadow-sm"
+          : "backdrop-blur-sm bg-transparent "
       }`}
     >
       <Link href="/" className="flex items-center justify-center group">
         <div className="relative w-8 h-8 transition-transform duration-300 group-hover:scale-110">
-          <Image src="/logo-dark.png" alt="Mobiverio" width={32} height={32} className="w-full h-full object-contain" />
+          {/* <Image src="/logo-dark.png" alt="Mobiverio" width={32} height={32} className="w-full h-full object-contain" /> */}
         </div>
         <span
           className={`ml-2 text-xl font-bold transition-colors duration-300 ${
@@ -103,9 +103,9 @@ export default function Header() {
             )}
           </div>
         ))}
-        <AnimatedButton variant="secondary" size="sm" className="ml-4">
-          Get Started
-        </AnimatedButton>
+        {/* <AnimatedButton variant="secondary" size="sm" className="ml-4">
+          Get quote
+        </AnimatedButton> */}
       </nav>
 
       {/* Mobile Menu Button */}

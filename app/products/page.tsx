@@ -2,6 +2,7 @@ import Header from "@/components/Header"
 import ProductsShowcase from "@/components/ProductsShowcase"
 import Footer from "@/components/Footer"
 import type { Metadata } from "next"
+import Hero from "@/components/Hero-copy"
 
 export const metadata: Metadata = {
   title: "Our Products - Innovative Solutions | Mobiverio Limited",
@@ -14,6 +15,7 @@ export default function ProductsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+          <Hero />
       <main className="flex-1">
         <ProductsShowcase />
       </main>

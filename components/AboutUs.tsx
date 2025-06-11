@@ -113,7 +113,7 @@ export default function AboutUs() {
   const team = [
     {
       name: "Oluwakeke Richard Dexter",
-      role: "Founder & CEO",
+      role: "Founder",
       bio: "Visionary leader and entrepreneur with a passion for transforming businesses through innovative technology solutions. Expert in strategic planning and business development.",
       image: "/cto-photo.jpg",
       location: "Lagos, Nigeria",
@@ -121,7 +121,7 @@ export default function AboutUs() {
     },
     {
       name: "Sule Isaac",
-      role: "Co-Founder & CTO",
+      role: "Co-Founder",
       bio: "Technical architect and blockchain specialist with extensive experience in full-stack development and emerging technologies. Leads our engineering excellence.",
       image: "/ceo-photo.jpg",
       location: "Abuja, Nigeria",
@@ -239,66 +239,7 @@ export default function AboutUs() {
         </div>
 
         {/* Timeline Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Our Journey</h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From startup to industry leader - here are the key milestones that shaped our story
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 to-pink-500 transform md:-translate-x-0.5"></div>
-
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => {
-                const IconComponent = milestone.icon
-                const isExpanded = expandedMilestone === index
-                const isEven = index % 2 === 0
-
-                return (
-                  <div
-                    key={index}
-                    className={`relative flex items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"}`}
-                  >
-                    {/* Timeline Node */}
-                    <div
-                      className={`absolute left-4 md:left-1/2 w-8 h-8 ${milestone.color} rounded-full flex items-center justify-center transform md:-translate-x-4 z-10`}
-                    >
-                      <IconComponent className="h-4 w-4 text-white" />
-                    </div>
-
-                    {/* Content */}
-                    <div className={`ml-16 md:ml-0 md:w-1/2 ${isEven ? "md:pr-8" : "md:pl-8"}`}>
-                      <Card
-                        className="hover:shadow-lg transition-shadow cursor-pointer"
-                        onClick={() => setExpandedMilestone(isExpanded ? null : index)}
-                      >
-                        <CardContent className="p-6">
-                          <div className="flex items-center justify-between mb-2">
-                            <Badge variant="outline" className="text-xs">
-                              <Calendar className="h-3 w-3 mr-1" />
-                              {milestone.year}
-                            </Badge>
-                            {isExpanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                          </div>
-                          <h4 className="text-xl font-semibold mb-2">{milestone.title}</h4>
-                          <p className="text-muted-foreground mb-3">{milestone.description}</p>
-                          {isExpanded && (
-                            <div className="pt-3 border-t border-gray-200">
-                              <p className="text-sm text-muted-foreground leading-relaxed">{milestone.details}</p>
-                            </div>
-                          )}
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
+        
 
         {/* Team Section */}
         <div className="mb-20">

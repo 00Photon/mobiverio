@@ -20,8 +20,8 @@ export default function HomePage() {
         <ProductsShowcase />
         <WorkShowcase />
         <TestimonialCarousel />
-        <AboutUs />
-        <CTA />
+        {/* <AboutUs /> */}
+        {/* <CTA /> */}
       </main>
       <Footer />
       <FloatingCTA />

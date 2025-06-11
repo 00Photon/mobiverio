@@ -291,7 +291,7 @@ export default function TestimonialCarousel() {
         <ScrollReveal delay={400}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
             {[
-              { number: "150+", label: "Projects Delivered" },
+              { number: "30+", label: "Projects Delivered" },
               { number: "98%", label: "Client Satisfaction" },
               { number: "$500M+", label: "Value Created" },
               { number: "50+", label: "Industries Served" },

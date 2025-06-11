@@ -2,6 +2,7 @@ import Header from "@/components/Header"
 import MVPLandingPage from "@/components/MVPLandingPage"
 import Footer from "@/components/Footer"
 import type { Metadata } from "next"
+import Hero from "@/components/Hero-copy"
 
 export const metadata: Metadata = {
   title: "MVP Development for Startups - Launch in 8 Weeks | Mobiverio",
@@ -14,6 +15,7 @@ export default function MVPDevelopmentPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <Hero />
       <main className="flex-1">
         <MVPLandingPage />
       </main>

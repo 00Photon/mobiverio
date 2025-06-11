@@ -14,7 +14,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 -mt-16 pt-32">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 -mt-16 pt-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-red-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -90,21 +90,20 @@ export default function Hero() {
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </AnimatedButton>
-              <AnimatedButton
+              {/* <AnimatedButton
                 variant="outline"
                 size="lg"
                 className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold"
               >
                 View Our Work
-              </AnimatedButton>
+              </AnimatedButton> */}
             </div>
           </ScrollReveal>
 
-          {/* Animated Stats */}
           <ScrollReveal delay={800}>
             <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl">
               {[
-                { number: "150+", label: "Projects Delivered" },
+                { number: "30+", label: "Projects Delivered" },
                 { number: "98%", label: "Client Satisfaction" },
                 { number: "24/7", label: "Support Available" },
               ].map((stat, index) => (
